@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<!-- http://www.creationkit.com/fallout4/index.php?title=Papyrus_Projects -->
+<PapyrusProject
+	xmlns="PapyrusProject.xsd"
+	Flags="Institute_Papyrus_Flags.flg"
+	Output="...."
+	Asm="Discard"
+	Optimize="false"
+	Release="false"
+	Final="false"
+>
+	<Imports>
+		<Import>.</Import>
+		<Import>..\User</Import>
+		<Import>..\Base</Import>
+	</Imports>
+	<Scripts>
+        <Script>NuclearWinter:GUI:HUDWidget</Script>
+		<Script>NuclearWinter:GUI:TemperatureWidget</Script>
+    </Scripts>
+</PapyrusProject>
