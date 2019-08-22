@@ -3,7 +3,7 @@
 <PapyrusProject
 	xmlns="PapyrusProject.xsd"
 	Flags="Institute_Papyrus_Flags.flg"
-	Output="...."
+	Output=".\Build"
 	Asm="Discard"
 	Optimize="false"
 	Release="false"
@@ -14,8 +14,11 @@
 		<Import>..\User</Import>
 		<Import>..\Base</Import>
 	</Imports>
-	<Scripts>
+	<Folders>
+		<Folder>.</Folder>
+	</Folders>
+	<!--<Scripts>
         <Script>NuclearWinter:GUI:HUDWidget</Script>
 		<Script>NuclearWinter:GUI:TemperatureWidget</Script>
-    </Scripts>
+    </Scripts>-->
 </PapyrusProject>

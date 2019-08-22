@@ -60,9 +60,12 @@ EndEvent
 
 
 Event NuclearWinter:Context.OnStartup(NuclearWinter:Context akSender, var[] arguments)
+	WriteLine(Log, Widget.ID+":OnStartup called")
 	If (WidgetRegister(HUD, Widget, self))
 		self.OnEnable()
 		WriteLine(Log, "The widget has enabled with the 'OnStartup' event.")
+	Else
+		WriteLine(Log, "OnStartup failed")
 	EndIf
 EndEvent
 
@@ -100,6 +103,7 @@ EndFunction
 ;---------------------------------------------
 
 Function Widget()
+	WriteLine(Log, Widget.ID+":Widget() called")
 	HUDFramework framework = HUDFramework.GetInstance()
 	If (framework)
 		HUD = framework
@@ -305,6 +309,7 @@ string Function WidgetToString(WidgetData value) Global
 	string sOpacity = "%"+value.Opacity
 	return value.ID+" ["+sPosition+", "+sOpacity+"]"
 EndFunction
+
 
 
 ; Virtual
