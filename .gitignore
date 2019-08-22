@@ -1,4 +1,4 @@
-.pex
+*.pex
 BuildErr.txt
 BuildLog.txt
 Build/
